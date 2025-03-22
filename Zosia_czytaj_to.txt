@@ -1,0 +1,9 @@
+grafiki są 1920x960px, ale gra ma być 1920x1080px
+
+jest tak ponieważ na górze ma być jeszcze ten głupi pasek z głupimi rzeczami
+
+(będzie on 1920x120px)
+
+jeżeli chodzi o układ grafik to na samym spodzie tło, potem trasa, meta i na samej górze infrastruktura
+
+outline trasy se wsadź gdzie chcesz, proponuję jednak by miało na wszelki wypadek opacity=0
