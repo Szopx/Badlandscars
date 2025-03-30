@@ -5,7 +5,7 @@ class Grafiki(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.pion_image = image
         self.rem = self.pion_image
-        self.image = self.pion_image
+        self.image = pygame.image.load(self.pion_image)
         self.rect = self.image.get_rect(center = (x, y))
         self.angle = 0
         self.x=x

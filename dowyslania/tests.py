@@ -1,7 +1,7 @@
 import unittest
 import pygame
 import os
-from grafiki import *
+from grafiki import Grafiki
 
 img = os.path.join("imgs", "bomb.png")
 
@@ -16,7 +16,7 @@ class GrafikiTests(unittest.TestCase):
         """checks that __init__ sets values properly"""
         self.assertEqual(self.g.pion_image, img)
         self.assertEqual(self.g.rem, img)
-        self.assertEqual(self.g.image, img)
+        self.assertIsInstance(self.g.image, pygame.Surface)
         self.assertIsInstance(self.g.rect, pygame.Rect)
         self.assertEqual(self.g.angle, 0)
         self.assertEqual(self.g.x, 3)
@@ -39,3 +39,6 @@ class GrafikiTests(unittest.TestCase):
 
     def test_draw(self):
         pass
+
+if __name__ == "__main__":
+    unittest.main()
