@@ -17,7 +17,7 @@ class Grafiki(pygame.sprite.Sprite):
         self.image = self.pion_image
         self.zmienxy(self.x, self.y)
     def kat(self,kot):
-        self.image = pygame.transform.rotate(self.pion_image, kot)
+        self.image = pygame.transform.rotate(pygame.image.load(self.pion_image), kot)
         self.rect = self.image.get_rect(center=self.rect.center)
         self.angle = kot
     def rotoi(self,k): #rotate only image
