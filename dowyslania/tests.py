@@ -87,33 +87,6 @@ class GameInfoTests(unittest.TestCase):
         time.sleep(1)
         self.assertTrue(self.me.get_level_time() > 0)
 
-# class AbstractCarTests(unittest.TestCase):
-
-# class PlayerCarTests(unittest.TestCase):
-
-# class MonetkaTests(unittest.TestCase):
-
-# class BombTests(unittest.TestCase):
-#     def setUp(self):
-#         self.me = Bomb((3,14))
-
-#     def test_init(self):
-#         """checks that __init__ sets values properly"""
-#         self.assertEqual(self.me.img, BOMBA)
-#         self.assertEqual(self.me.maska, BOMBA_MASKA)
-#         self.assertEqual(self.me.x, 3)
-#         self.assertEqual(self.me.y, 14)
-#         self.assertEqual(self.me.czas, 0)
-
-# class ComputerCarTests(unittest.TestCase):
-
-# class OtherTests(unittest.TestCase):
-#     def test_draw(self):
-#     def test_deklaruj(self):
-#     def test_move_player(self):
-#     def test_handle_collision(self):
-#     def test_deklaruj(self):
-
 
 if __name__ == "__main__":
     unittest.main()
